@@ -6,7 +6,7 @@
 /*   By: alexgonz <alexgonz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 16:28:36 by alexgonz          #+#    #+#             */
-/*   Updated: 2026/10/07 10:44:34 by alexgonz         ###   ########.fr       */
+/*   Updated: 2026/10/07 17:20:33 by alexgonz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,20 +27,20 @@ static int	hex_digits(long unsigned int nbr)
 
 static void	write_hex(long unsigned int nbr, int crit)
 {
-	char	digits[16];
+	char	digits[17];
 
 	if (crit == 1)
-		ft_strlcpy(digits, "0123456789ABCDEF", 16);
+		ft_strlcpy(digits, "0123456789ABCDEF", 18);
 	else
-		ft_strlcpy(digits, "0123456789abcdef", 16);
+		ft_strlcpy(digits, "0123456789abcdef", 18);
 	if (nbr >= 16)
-		write_hex(nbr / 10, crit);
+		write_hex(nbr / 16, crit);
 	write(1, &digits[nbr % 16], 1);
 }
 
-int	print_hex(int nbr, int flag)
+int	print_hex(unsigned int nbr, int flag)
 {
-	long	n;
+	long unsigned	n;
 
 	n = (long)nbr;
 	write_hex(n, flag);

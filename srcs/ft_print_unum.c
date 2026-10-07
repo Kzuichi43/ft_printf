@@ -6,7 +6,7 @@
 /*   By: alexgonz <alexgonz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 15:56:21 by alexgonz          #+#    #+#             */
-/*   Updated: 2026/10/07 10:44:19 by alexgonz         ###   ########.fr       */
+/*   Updated: 2026/10/07 17:03:37 by alexgonz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static void	write_unum(unsigned int nbr)
 
 	if (nbr >= 10)
 		write_unum(nbr / 10);
-	c = nbr % 10 - '0';
+	c = nbr % 10 + '0';
 	write(1, &c, 1);
 }
 

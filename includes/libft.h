@@ -6,10 +6,9 @@
 /*   By: alexgonz <alexgonz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/28 11:48:10 by alexgonz          #+#    #+#             */
-/*   Updated: 2026/10/02 09:49:29 by alexgonz         ###   ########.fr       */
+/*   Updated: 2026/10/07 17:21:49 by alexgonz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #ifndef LIBFT_H
 # define LIBFT_H
 

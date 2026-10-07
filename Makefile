@@ -6,7 +6,7 @@
 #    By: alexgonz <alexgonz@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/07 10:22:52 by alexgonz          #+#    #+#              #
-#    Updated: 2026/10/07 10:30:30 by alexgonz         ###   ########.fr        #
+#    Updated: 2026/10/07 16:49:09 by alexgonz         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,8 +15,7 @@ CFLAGS = -Wall -Wextra -Werror -I./includes/
 RM = rm -rf
 NAME = libftprintf.a
 
-SRCS = ft_printf.c srcs/ft_print_hex.c srcs/ft_print_num.c \
-	   srcs/ft_print_void.c srcs/ft_print_char.c srcs/ft_print_unum.c
+SRCS = ft_printf.c srcs/ft_print_hex.c srcs/ft_print_num.c srcs/ft_print_void.c srcs/ft_print_char.c srcs/ft_print_unum.c
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)

@@ -21,7 +21,7 @@ HEADER    := libft.h
 
 all: $(NAME)
 $(NAME): $(OBJS)
-	$(AR) $(RCS) $@ $^
+	$(AR) $(RCS) $(NAME) $(OBJS)
 
 %.o: %.c $(HEADER) Makefile
 	$(CC) $(CFLAGS) -c -o $@ $<

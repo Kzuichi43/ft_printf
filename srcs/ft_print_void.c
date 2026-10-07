@@ -6,7 +6,7 @@
 /*   By: alexgonz <alexgonz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 16:39:36 by alexgonz          #+#    #+#             */
-/*   Updated: 2026/10/07 10:45:14 by alexgonz         ###   ########.fr       */
+/*   Updated: 2026/10/07 16:51:20 by alexgonz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static void	write_void(unsigned long long int ptr)
 {
 	static char	base[16];
 
-	ft_strlcpy(base, "0123456789abcdef", 16);
+	ft_strlcpy(base, "0123456789abcdef", 17);
 	if (ptr >= 16)
 		write_void(ptr);
 	write(1, &base[ptr % 16], 1);
