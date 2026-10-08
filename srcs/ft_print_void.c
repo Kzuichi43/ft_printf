@@ -33,7 +33,7 @@ static void	write_void(unsigned long long int ptr)
 
 	ft_strlcpy(base, "0123456789abcdef", 17);
 	if (ptr >= 16)
-		write_void(ptr);
+		write_void(ptr / 16);
 	write(1, &base[ptr % 16], 1);
 }
 
